@@ -55,19 +55,19 @@ PROJECT_CONFIG = {
     "test": {
         "main": "/root/automate_scripts/test.sh"
     },
-    "PAI_WEB": {
-        "Live": "/root/automate_scripts/pai-web-live.sh",
-        "DEV": "/root/automate_scripts/paiwebdev.sh",
-        "QA": "/root/automate_scripts/paiwebqa.sh",
-        "Beta": "/root/automate_scripts/pai-web-beta.sh"
+    "Sample_1": {
+        "Live": "/root/automate_scripts/sample1-live.sh",
+        "DEV": "/root/automate_scripts/sample1dev.sh",
+        "QA": "/root/automate_scripts/sample1-qa.sh",
+        "Beta": "/root/automate_scripts/sample1-beta.sh"
     },
     "auto_deploy_script": {
         "main": "/root/automate_scripts/auto-deploy-script.sh"
     },
-    "PAI_SMS": {
-        "qa": "/root/automate_scripts/sms-qa.sh",
-        "Beta": "/root/automate_scripts/sms-beta.sh",
-        "Dev": "/root/automate_scripts/sms-dev.sh"
+    "Sample_2": {
+        "qa": "/root/automate_scripts/sample2-qa.sh",
+        "Beta": "/root/automate_scripts/ssample2-beta.sh",
+        "Dev": "/root/automate_scripts/samlpe2-dev.sh"
     }
 }
 
