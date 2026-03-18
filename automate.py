@@ -54,6 +54,20 @@ PROJECT_CONFIG = {
     # Simple project with only one branch? Just list that one.
     "test": {
         "main": "/root/automate_scripts/test.sh"
+    },
+    "Sample_1": {
+        "Live": "/root/automate_scripts/sample1-live.sh",
+        "DEV": "/root/automate_scripts/sample1dev.sh",
+        "QA": "/root/automate_scripts/sample1-qa.sh",
+        "Beta": "/root/automate_scripts/sample1-beta.sh"
+    },
+    "auto_deploy_script": {
+        "main": "/root/automate_scripts/auto-deploy-script.sh"
+    },
+    "Sample_2": {
+        "qa": "/root/automate_scripts/sample2-qa.sh",
+        "Beta": "/root/automate_scripts/ssample2-beta.sh",
+        "Dev": "/root/automate_scripts/samlpe2-dev.sh"
     }
 }
 
@@ -132,3 +146,8 @@ def webhook_listener(project_key):
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=7070)
+
+#https://auto.pineappleai.cloud/webhook/test
+
+## for avoid server down
+#pm2 start "gunicorn -w 4 -b 0.0.0.0:7070 --timeout 600 automate:app" --name auto-deploy-bot
